@@ -104,6 +104,13 @@ button {
     font-weight: 800;
 }
 
+.btn {
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
 #question-box {
     font-size: 1.3rem;
 }
