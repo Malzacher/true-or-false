@@ -38,7 +38,7 @@ var questions = [{
 }, {
     "question": " Does broccoli contain more vitamin C than lemons?",
     "answer": true,
-    "response": " True! Broccoli contains 89 mg of vitamin C per 100 grams, while lemons contain only 77 mg of vitamin C per 100 grams."
+    "response": " True! Broccoli contains 89 mg, while lemons contain only 77 mg"
 }, {
     "question": " Being scared of clouds is called Coulrophobia?",
     "answer": false,
@@ -70,11 +70,11 @@ var questions = [{
 }, {
     "question": " Rapper Nicki Minaj is over 180 cm (5 ft, 10.9 in) in height",
     "answer": false,
-    "response": "False. Nicki Minaj is ‘only’ 157 cm (5 ft, 1.8 in) tall. Hard to tell with all those high heels, right?"
+    "response": "False. Nicki Minaj is ‘only’ 157 cm (5 ft, 1.8 in) tall"
 }, {
     "question": " The Trojan horse was used by the Greeks to mask their way into the city of Troy and win the war",
     "answer": true,
-    "response": "True! The Trojan horse was used by the Greeks to mask their way into the city of Troy and win the war"
+    "response": "True!"
 }, {
     "question": " The liver is the largest organ in the human body",
     "answer": false,
