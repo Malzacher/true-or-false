@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #131E2A;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-top: 5rem;
+}
+
+.score-container {
+    position: absolute;
+    top: 40px;
+    right: 5rem;
+    padding: 10px;
+}
+
+.header-container {
+    position: absolute;
+    top: 10px;
+    left: 5rem;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.body-container {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 1rem;
+    width: calc(100%- 40px);
+    padding: 0px 5rem 5rem 5rem;
+    margin-top: 3rem;
+}
+
+#question-box {
+    display: flex;
+    flex-basis: 100%;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    background-color: #222B39;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    opacity: .8;
+}
+
+#question-response {
+    flex-basis: 100%;
+    width: 100%;
+    word-wrap: normal;
+    padding: 50px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transform: opacity 0.3s ease-in-out;
+    -moz-transform: opacity 0.3s ease-in-out;
+    -o-transform: opacity 0.3s ease-in-out;
+    -ms-transform: opacity 0.3s ease-in-out;
+    transform: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#true-box {
+    background: linear-gradient(90deg, #36DE90, transparent) #188E56;
+    transition: background-color 1s;
+    margin-right: 1rem;
+}
+
+#true-box:hover {
+    background-color: #bc4dd2;
+}
+
+#false-box {
+    background: linear-gradient(270deg, #F57860, transparent) #D73010;
+    transition: background-color 1s;
+    margin-left: 1rem;
+}
+
+#false-box:hover {
+    background-color: #bc4dd2;
+}
+
+#true-box,
+#false-box {
+    display: flex;
+    flex: 0 0 calc(50% - 1.5rem);
+    height: 30%;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+
+button {
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+#question-box {
+    font-size: 1.3rem;
+}
+
+#true-box p,
+#false-box p,
+#question-box p {
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+}
+
+#timer {
+    position: relative;
+    top: -25px;
+    margin: 0 auto;
+    clear: left;
+    z-index: 0;
+    text-align: center;
+    background-color: #1D2635;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#timer-center {
+    line-height: 3;
+}
+
+#question-response.fade {
+    opacity: 1;
+}
+
+@media (max-width: 450px) {
+
+    .header-container {
+        left: 5px;
+        font-size: 10px;
+        top: 25px;
+    }
+
+    .score-container {
+        right: 0;
+    }
+
+    .body-container {
+        padding: 10px;
+    }
+
+    #true-box {
+        margin-right: 0;
+    }
+
+    #false-box {
+        margin-left: 0;
+    }
+
+    #true-box,
+    #false-box {
+        flex: 0 0 47%;
+    }
+
+
+}
